@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.check-box{
+    background-image: url(Camera.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.btn-one{
+    color: white;
+    font-size: 30px;
+   line-height: 60px;
+   position: absolute;
+   left: 30px;
+   line-height: 60px;
+}
+
+.sidebar-menu {
+    position: fixed;
+    left: -350px;
+    height: 100vh;
+    width: 300px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s linear;
+}
+
+.sidebar-menu .logo {
+    position: absolute;
+    width: 100%;
+    /* left: 1px; */
+    font-weight: 400;
+    line-height: 60px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+    height: 60px;
+}
+
+.sidebar-menu .logo a {
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sidebar-menu .menu {
+   position: absolute;
+   width: 100%;
+   top: 80px;
+}
+
+
+.sidebar-menu .btn-two {
+    color: grey;
+    position: absolute;
+    font-size: 25px;
+    line-height: 60px;
+    left: 270px;
+    /* cursor: progress; */
+}
+
+.sidebar-menu .menu li {
+    color: white;
+    margin-top: 15px;
+    padding: 14px 20px;
+}
+
+.sidebar-menu .menu li , a{
+    text-decoration: none;
+    color: white;
+}
+.sidebar-menu .menu li , i {
+    padding-right: 8px;
+}
+
+.sidebar-menu .social-media {
+    position: absolute;
+   left: 25%;
+    bottom: 45px;
+
+}
+
+.sidebar-menu .social-media i {
+    opacity: 0.5;
+    padding-right: 10px;
+}
+
+#check{
+    display: none;
+}
+
+.sidebar-menu .menu li:hover{
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+.sidebar-menu .social-media i:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.sidebar-menu .btn-two :hover{
+    cursor: pointer;
+    font-size: 30px;
+    transition: all 0.3s linear;
+}
+
+#check:checked ~ .sidebar-menu{
+    left: 0px;
+}
+
+#check:checked ~ .btn-one i {
+    opacity: 0;
+}
+.btn-one:hover{
+    font-size: 40px;
+    transition: all 0.3s linear;
+}
